@@ -68,7 +68,7 @@ namespace ChallengeSets
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            Business business = new Business();
+            
             biz.Name = "TrueCoders";
             return;
         }
