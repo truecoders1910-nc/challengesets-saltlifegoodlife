@@ -43,9 +43,9 @@ namespace ChallengeSets
         {
             //stores data as dictionary
 
-            //check rows
             for (int i = 0; i < 3; i++)
             {
+                //check rows
                 if (finalBoard[i, 0] == finalBoard[i, 1] && finalBoard[i, 1] == finalBoard[i, 2])
                 {
                     if (finalBoard[i, 0] == 'O')
@@ -58,10 +58,7 @@ namespace ChallengeSets
                     }
 
                 }
-            }
-            //check cols
-            for (int i = 0; i < 3; i++)
-            {
+                //check cols
                 if (finalBoard[0, i] == finalBoard[1, i] && finalBoard[1, i] == finalBoard[2, i])
                 {
                     if (finalBoard[0, i] == 'O')
@@ -74,6 +71,7 @@ namespace ChallengeSets
                     }
                 }
             }
+            
             //check diag
             if ((finalBoard[1, 1] & finalBoard[2, 2]) == finalBoard[0, 0])
             {
